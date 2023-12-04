@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=GFS+Didot&family=Nanum+Myeongjo:wght@400;700;800&family=Noto+Sans+TC&family=Noto+Serif+TC&display=swap');
+
+
+
+$navColor:#000000;
+$WhiteColor:#ffffff;
+
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    height: 110dvh;
+    width: 100%;
+    position: relative;
+    .container1{
+        padding: 0;
+        position: relative;
+        height: 110dvh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Nanum Myeongjo', serif;
+        overflow: hidden;
+        .titleRow{
+            height: 20dvh;
+            position: relative;
+            // top: -5dvh;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+       
+            .titleCol{
+               
+                padding: 0;
+                margin: 0;
+                height: 20dvh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                h1{
+                  padding: 0;
+                  margin: 0;
+                  font-weight:500;
+                  font-size: 13rem;
+                  letter-spacing: 1.5rem;
+                }
+            }
+        }
+        .formRow{
+            height: 60dvh;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 15dvh;
+            .InputBox{
+                label{
+
+                }
+                input{
+                    border: none;
+                    border-bottom: 1px solid $navColor;
+                    border-radius: 0;
+                    &:focus{
+                        border-color: none;
+                        outline: none;
+                        box-shadow: none;
+                    }
+                    &:-webkit-autofill,
+                    &:-webkit-autofill:hover,
+                    &:-webkit-autofill:focus,
+                    &:-webkit-autofill:active  {
+                        -webkit-text-fill-color: black;
+                        -webkit-box-shadow: 0 0 0 1000px rgba(255,255,255,0) inset;
+                        transition: background-color 5000s ease-in-out 0s;
+                    }
+                }
+
+            }
+            .textBox{
+                label{
+
+                }
+                textarea{
+                    border: none;
+                    border: 1px solid $navColor;
+                    border-radius: 0;
+                    &:focus{
+                        border-color: none;
+                        outline: none;
+                        box-shadow: none;
+                    }
+                }
+            }
+            .btnBox{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .btn{
+                    border: none;
+                    border: 1px solid $navColor;
+                    border-radius: 0;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    transition: 0.5s ease-in-out;
+                    &:focus{
+                        border-color: none;
+                        outline: none;
+                        box-shadow: none;
+                    }
+                    &:hover{
+                        background-color: #000000;
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+}
+footer{
+    // background-color: rgb(204, 204, 204);
+    // top: 400dvh;
+    font-family: 'Nanum Myeongjo', serif;
+    width: 100%;
+    height: 30dvh;
+    position:relative;//
+    z-index: 100;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(0, 0, 0);
+    .logo{
+        position: absolute;
+        padding-left:3dvw ;
+        bottom: 1.5dvh;
+        font-size: 80px;
+        letter-spacing: 1.8rem;
+        color: $WhiteColor;
+    }
+    .navBox{
+        position:absolute;
+        width: 100%;
+        // background-color: antiquewhite;
+        display: flex;
+        bottom:1dvh;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+
+        ul{
+            margin: 0;
+            padding: 0;
+            gap: 20px;
+        li{
+            
+            a{
+                color: $WhiteColor;
+                text-decoration: none;
+                font-weight: 100;
+                font-size:16px;
+                letter-spacing: 0.2rem;
+                
+                transition:  0.5s ease-in-out;
+                
+                &:hover{
+                    color: rgb(84, 84, 84);
+                    
+                    transition:0.5s ease-in-out;
+                
+                }
+            }
+            transform: translateY(0px);
+            transition:0.5s ease-in-out;
+            &:hover{
+                
+                transform: translateY(10px);
+                transition:0.5s ease-in-out;
+            
+            }
+        }
+        }
+        .mainNav{
+            width: 70dvw;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+
+            list-style: none;
+
+            padding-left:3dvw ;
+
+        }
+        .socialNav{
+            width: 30dvw;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+
+            list-style: none;
+
+            padding-right:3dvw ;
+
+        }
+    }
+}
+@media screen and (min-width:576px) and (max-width:768px){
+
+    main{
+        .container1{
+            .titleRow{
+                .titleCol{
+                    h1{
+                        font-size: 8rem;
+                    }
+                }
+            }
+        }
+    }
+        
+    footer{
+        // top: 400dvh;
+        .logo{
+            font-size: 40px;
+            letter-spacing: 1rem;
+            bottom:2.5dvh ;
+        }
+        .navBox{
+            bottom: 1dvh;
+            ul{
+                gap: 10px;
+                li{
+                    a{
+                        font-size:12px;
+                        letter-spacing: 0.1rem;
+                    }
+                }
+            }
+        }
+    }
+ 
+
+}
+
+@media screen and (max-width:576px){
+
+    main{
+        .container1{
+            .titleRow{
+                .titleCol{
+                    h1{
+                        font-size: 5rem;
+                    }
+                }
+            }
+        }
+    }
+        
+    footer{
+        // top: 400dvh;
+        .logo{
+            font-size: 40px;
+            letter-spacing: 1rem;
+            bottom:2.5dvh ;
+        }
+        .navBox{
+            bottom: 1dvh;
+            ul{
+                gap: 10px;
+                li{
+                    a{
+                        font-size:12px;
+                        letter-spacing: 0.1rem;
+                    }
+                }
+            }
+        }
+    }
+ 
+
+}
+
+::-webkit-scrollbar {
+    position: absolute;
+    top: 0;
+    width: 7px;
+    display: none;
+  }

@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=GFS+Didot&family=Nanum+Myeongjo:wght@400;700;800&family=Noto+Sans+TC&family=Noto+Serif+TC&display=swap');
+$textColor:#ffffff;
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.beginBox{
+    position: relative;
+    width: 100%;
+    height: 100dvh;
+    overflow: hidden;//
+    .beginBoxWrapper{
+        width: inherit;
+        height: inherit;
+        position: relative;
+        .beginBoxMedia{
+            position: absolute;
+            .beginBoxFigure{
+                position: relative;
+                width: 100dvw;
+                height: 100dvh;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                img{
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: 50% 50%;
+                   
+                   
+                }
+            }
+        }
+
+        .beginBoxRow{
+            position: absolute;
+            width: 100%;
+            height: 100dvh;
+            color: $textColor;
+            font-family: 'Nanum Myeongjo', serif;
+            .beginBoxRowText{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                h1{
+                    text-align: center;
+                    width: 500px;
+                    font-size: 100px;
+                    letter-spacing: 1.5rem;
+                    margin: 0;
+                  
+                }
+                .beginBoxRowLine{
+                    content: "";
+                    width: 500px;
+                    border-bottom: 4px solid $textColor;
+                }
+                h4{
+                    font-size: 12px;
+                    letter-spacing: 0.2rem;
+                    margin-top: 1rem;
+                }
+            }
+        }
+
+        
+        .beginBoxRow2{
+            position: absolute;
+            width: 100%;
+            height: 100dvh;
+            
+            font-family: 'Nanum Myeongjo', serif;
+            .beginBoxRowText2{
+                width: 100%;
+                height: 100%;
+               display: flex;
+               align-items: end;
+               justify-content: center;
+               ul{
+                // background-color: rgba(0, 255, 255, 0.259);
+                    margin: 0;
+                    padding: 0;
+                    width: 100%;
+                    height: 10dvh;
+                    display: flex;
+                
+                    justify-content: end;
+                    gap: 3rem;
+                    padding-right: 3rem;
+                    align-items: center;
+                    list-style: none;
+
+                    li{
+
+                        a{
+                            font-size: 12px;
+                            text-decoration: none;
+                            color: $textColor;
+                            letter-spacing: 0.2rem;
+                        }
+                    }
+               }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:768px){
+    .beginBox{
+        .beginBoxWrapper{
+            .beginBoxRow{
+                .beginBoxRowText{
+                    h1{
+                        
+                    }
+                    .beginBoxRowLine{
+
+                    }
+                    h4{
+                        width:70dvw;
+                        padding: 0;
+                        line-height: 1rem;
+                    }
+                }
+            }
+            .beginBoxRow2{
+                .beginBoxRowText2{
+
+                    ul{
+                        padding: 0;
+                        justify-content: center;
+                        align-items: center;
+                        li{
+                            a{
+    
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+}
+@media screen and (max-width:575px){
+    .beginBox{
+        .beginBoxWrapper{
+            .beginBoxRow{
+                .beginBoxRowText{
+                    h1{
+                        
+                    }
+                    .beginBoxRowLine{
+
+                    }
+                    h4{
+                        width:70dvw;
+                        padding: 0;
+                        line-height: 1rem;
+                    }
+                }
+            }
+            .beginBoxRow2{
+                .beginBoxRowText2{
+
+                    ul{
+                        padding: 0;
+                        justify-content: center;
+                        align-items: center;
+                        li{
+                            a{
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}

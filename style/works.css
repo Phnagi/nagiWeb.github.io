@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100dvh;
+  background-color: aqua;
+}
+body .container {
+  width: 100%;
+  height: 100%;
+  background-color: antiquewhite;
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: none;
+  scroll-snap-type: x mandatory;
+}
+body .container section {
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex: none;
+  scroll-snap-align: start;
+}
+body .container section h1 {
+  margin: 0;
+  padding: 0;
+}
+body .container section:nth-of-type(1) {
+  background-color: rgb(255, 110, 110);
+  color: black;
+}
+body .container section:nth-of-type(2) {
+  background-color: rgb(202, 255, 110);
+  color: black;
+}
+body .container section:nth-of-type(3) {
+  background-color: rgb(110, 233, 255);
+  color: black;
+}
+body .container section:nth-of-type(4) {
+  background-color: rgb(187, 110, 255);
+  color: black;
+}/*# sourceMappingURL=works.css.map */

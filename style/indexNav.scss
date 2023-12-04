@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=GFS+Didot&family=Nanum+Myeongjo:wght@400;700;800&family=Noto+Sans+TC&family=Noto+Serif+TC&display=swap');
+
+
+
+$navColor:#000000;
+
+
+main{
+    width: 100%;
+
+    padding: 0;
+    margin: 0;
+    .container1{
+        width: 100%;
+        height: 100dvh;
+        overflow: hidden;
+        nav{
+            background-color: rgb(204, 204, 204);
+            font-family: 'Nanum Myeongjo', serif;
+            width: 100%;
+            height: 100dvh;
+            position:relative;
+            z-index: 20;
+            overflow: hidden;
+            padding: 0;
+            margin: 0;
+            .logo{
+                position: relative;
+                padding-left:3dvw ;
+                top: 82dvh;
+                font-size: 80px;
+                letter-spacing: 1.8rem;
+                color: $navColor;
+            }
+            .navBox{
+                position: relative;
+                width: 100%;
+                // background-color: antiquewhite;
+                display: flex;
+                top: 82dvh;
+                align-items: center;
+                margin: 0;
+                padding: 0;
+                
+                ul{
+                    margin: 0;
+                    padding: 0;
+                    gap: 20px;
+                    li{
+                        
+                        a{
+                            color: $navColor;
+                            text-decoration: none;
+                            font-weight: 100;
+                            font-size:16px;
+                            letter-spacing: 0.2rem;
+                            
+                            transition:  0.5s ease-in-out;
+                            
+                            &:hover{
+                                color: rgb(84, 84, 84);
+                                
+                                transition:0.5s ease-in-out;
+                               
+                            }
+                        }
+                        transform: translateY(0px);
+                        transition:0.5s ease-in-out;
+                        &:hover{
+                            
+                            transform: translateY(10px);
+                            transition:0.5s ease-in-out;
+                           
+                        }
+                    }
+                }
+                .mainNav{
+                    width: 70dvw;
+                    display: flex;
+                    align-items: center;
+                    justify-content: start;
+                    
+                    list-style: none;
+        
+                    padding-left:3dvw ;
+                    
+                }
+                .socialNav{
+                    width: 30dvw;
+                    display: flex;
+                    justify-content: end;
+                    align-items: center;
+                   
+                    list-style: none;
+        
+                    padding-right:3dvw ;
+                    
+                }
+            }
+        }
+
+
+
+        
+    }
+
+
+}

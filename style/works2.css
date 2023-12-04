@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2&family=GFS+Didot&family=Nanum+Myeongjo:wght@400;700;800&family=Noto+Sans+TC&family=Noto+Serif+TC&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100dvh;
+  overflow-x: hidden;
+}
+body nav {
+  font-family: "Nanum Myeongjo", serif;
+  width: 100vw;
+  height: 100dvh;
+  position: fixed;
+  z-index: 20;
+}
+body nav .logo {
+  position: relative;
+  padding-left: 3dvw;
+  top: 82dvh;
+  font-size: 80px;
+  letter-spacing: 1.8rem;
+  color: #ffffff;
+}
+body nav .navBox {
+  position: relative;
+  width: 100dvw;
+  display: flex;
+  top: 82dvh;
+  align-items: center;
+}
+body nav .navBox ul {
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+body nav .navBox ul li {
+  transform: translateY(0px);
+  transition: 0.5s ease-in-out;
+}
+body nav .navBox ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 100;
+  font-size: 16px;
+  letter-spacing: 0.2rem;
+  transition: 0.5s ease-in-out;
+}
+body nav .navBox ul li a:hover {
+  color: rgb(84, 84, 84);
+  transition: 0.5s ease-in-out;
+}
+body nav .navBox ul li:hover {
+  transform: translateY(10px);
+  transition: 0.5s ease-in-out;
+}
+body nav .navBox .mainNav {
+  width: 70dvw;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  list-style: none;
+  padding-left: 3dvw;
+}
+body nav .navBox .socialNav {
+  width: 30dvw;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  list-style: none;
+  padding-right: 3dvw;
+}
+body .containerWrapper {
+  width: 100vw;
+  height: 100dvh;
+}
+body .containerWrapper .container {
+  width: 1000vw;
+  height: 100dvh;
+  display: flex;
+}
+body .containerWrapper .container section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100dvh;
+  overflow: hidden;
+}
+body .containerWrapper .container section img {
+  width: 100dvw;
+  height: 100dvh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body .containerWrapper .container section h1 {
+  margin: 0;
+  padding: 0;
+}
+body .containerWrapper .container section:nth-of-type(1) {
+  color: black;
+}
+body .containerWrapper .container section:nth-of-type(1) img {
+  -o-object-position: 50% 45%;
+     object-position: 50% 45%;
+}
+body .containerWrapper .container section:nth-of-type(2) {
+  color: black;
+}
+body .containerWrapper .container section:nth-of-type(2) img {
+  -o-object-position: 0% 0%;
+     object-position: 0% 0%;
+}
+body .containerWrapper .container section:nth-of-type(3) {
+  color: black;
+}
+body .containerWrapper .container section:nth-of-type(4) {
+  color: black;
+}
+body .containerWrapper .container section:nth-of-type(5) {
+  color: black;
+}
+body .containerWrapper .container section:nth-of-type(6) {
+  color: black;
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  body nav .logo {
+    font-size: 50px;
+    letter-spacing: 1rem;
+    top: 88dvh;
+  }
+  body nav .navBox {
+    top: 88dvh;
+  }
+  body nav .navBox ul li a {
+    font-size: 14px;
+    letter-spacing: 0.1rem;
+  }
+  body .containerWrapper .container section:nth-of-type(2) img {
+    -o-object-position: 30% 0%;
+       object-position: 30% 0%;
+  }
+  body .containerWrapper .container section:nth-of-type(3) img {
+    -o-object-position: 56% 0%;
+       object-position: 56% 0%;
+  }
+  body .containerWrapper .container section:nth-of-type(10) img {
+    -o-object-position: 70% 50%;
+       object-position: 70% 50%;
+  }
+}
+@media screen and (max-width: 575px) {
+  body nav .logo {
+    font-size: 40px;
+    letter-spacing: 1rem;
+    top: 88dvh;
+  }
+  body nav .navBox {
+    top: 88dvh;
+  }
+  body nav .navBox ul {
+    gap: 10px;
+  }
+  body nav .navBox ul li a {
+    font-size: 12px;
+    letter-spacing: 0.1rem;
+  }
+  body .containerWrapper .container section:nth-of-type(2) img {
+    -o-object-position: 30% 0%;
+       object-position: 30% 0%;
+  }
+  body .containerWrapper .container section:nth-of-type(3) img {
+    -o-object-position: 56% 0%;
+       object-position: 56% 0%;
+  }
+  body .containerWrapper .container section:nth-of-type(10) img {
+    -o-object-position: 70% 50%;
+       object-position: 70% 50%;
+  }
+}
+::-webkit-scrollbar {
+  display: none;
+}/*# sourceMappingURL=works2.css.map */

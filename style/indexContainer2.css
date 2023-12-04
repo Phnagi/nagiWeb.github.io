@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2&family=GFS+Didot&family=Nanum+Myeongjo:wght@400;700;800&family=Noto+Sans+TC&family=Noto+Serif+TC&display=swap");
+.stickyContainer {
+  position: relative;
+  height: 100dvh;
+  width: 100%;
+}
+.stickyContainer .textBox {
+  position: sticky;
+  height: 420dvh;
+  width: 100%;
+}
+.stickyContainer .textBox .aboutH2 {
+  font-family: "Nanum Myeongjo", serif;
+  width: 100%;
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 200px;
+  position: sticky;
+  top: 0px;
+  margin: 0;
+  padding: 0;
+  z-index: -1;
+  overflow: hidden;
+  transform: scale(clamp(0, var(--scale), 1));
+}
+.stickyContainer .textBox .scaleText {
+  position: sticky;
+  height: 150dvh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  top: 0px;
+  font-family: "Nanum Myeongjo", serif;
+  z-index: 10;
+}
+.stickyContainer .textBox .scaleText p {
+  padding-bottom: 50dvh;
+  font-size: 1.2rem;
+  width: 60%;
+  line-height: 1.6rem;
+}
+.stickyContainer .textBox .workContianer {
+  width: 100%;
+  height: 160dvh;
+  background-color: #000000;
+}
+.stickyContainer .textBox .workContianer .worksH2 {
+  font-family: "Nanum Myeongjo", serif;
+  width: 100%;
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 200px;
+  position: sticky;
+  top: 0px;
+  background-color: rgb(0, 0, 0);
+  margin: 0;
+  padding: 0;
+  z-index: 10;
+  overflow: hidden;
+  transform: scale(clamp(0, var(--scale) * 1.1, 1));
+  color: aliceblue;
+}
+.stickyContainer .scaleText2 {
+  position: sticky;
+  height: 100dvh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(0, 0, 0);
+  align-items: center;
+  margin: 0;
+  top: 0px;
+  color: #ffffff;
+  font-family: "Nanum Myeongjo", serif;
+  z-index: 10;
+}
+.stickyContainer .scaleText2 p {
+  font-size: 1.2rem;
+  width: 60%;
+  line-height: 1.6rem;
+  transform: translateX(-100vw);
+  transition: 1s ease-in-out;
+  opacity: 0;
+}
+
+.worksTextAnimate {
+  transform: translateX(0vw) !important;
+  opacity: 1 !important;
+}
+
+footer {
+  top: 400dvh;
+  font-family: "Nanum Myeongjo", serif;
+  width: 100%;
+  height: 30dvh;
+  position: relative;
+  z-index: 100;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  background-color: rgb(0, 0, 0);
+}
+footer .logo {
+  position: relative;
+  padding-left: 3dvw;
+  top: 10dvh;
+  font-size: 80px;
+  letter-spacing: 1.8rem;
+  color: #ffffff;
+}
+footer .navBox {
+  position: relative;
+  width: 100%;
+  display: flex;
+  top: 10dvh;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+footer .navBox ul {
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+footer .navBox ul li {
+  transform: translateY(0px);
+  transition: 0.5s ease-in-out;
+}
+footer .navBox ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 100;
+  font-size: 16px;
+  letter-spacing: 0.2rem;
+  transition: 0.5s ease-in-out;
+}
+footer .navBox ul li a:hover {
+  color: rgb(84, 84, 84);
+  transition: 0.5s ease-in-out;
+}
+footer .navBox ul li:hover {
+  transform: translateY(10px);
+  transition: 0.5s ease-in-out;
+}
+footer .navBox .mainNav {
+  width: 70dvw;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  list-style: none;
+  padding-left: 3dvw;
+}
+footer .navBox .socialNav {
+  width: 30dvw;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  list-style: none;
+  padding-right: 3dvw;
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .stickyContainer .textBox .aboutH2 {
+    font-size: 150px;
+  }
+  .stickyContainer .textBox .scaleText p {
+    width: 70%;
+    font-size: 1rem;
+  }
+  .stickyContainer .textBox .workContianer .worksH2 {
+    font-size: 150px;
+  }
+  .stickyContainer .scaleText2 p {
+    width: 70%;
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .stickyContainer .textBox .aboutH2 {
+    font-size: 100px;
+  }
+  .stickyContainer .textBox .scaleText p {
+    width: 70%;
+    font-size: 1rem;
+  }
+  .stickyContainer .textBox .workContianer .worksH2 {
+    font-size: 100px;
+  }
+  .stickyContainer .scaleText2 p {
+    width: 70%;
+    font-size: 1rem;
+  }
+  footer {
+    top: 400dvh;
+  }
+  footer .logo {
+    font-size: 40px;
+    letter-spacing: 1rem;
+    top: 65%;
+  }
+  footer .navBox {
+    top: 65%;
+  }
+  footer .navBox ul {
+    gap: 10px;
+  }
+  footer .navBox ul li a {
+    font-size: 12px;
+    letter-spacing: 0.1rem;
+  }
+}/*# sourceMappingURL=indexContainer2.css.map */
