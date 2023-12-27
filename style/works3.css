@@ -11,9 +11,9 @@ body {
 body nav {
   font-family: "Nanum Myeongjo", serif;
   width: 100vw;
-  height: 100dvh;
+  height: 10dvh;
   position: fixed;
-  z-index: 100;
+  z-index: 10;
   mix-blend-mode: difference;
   color: #000000;
 }
@@ -123,8 +123,25 @@ body .containerWrapper .container section img {
   height: 80dvh;
   -o-object-fit: contain;
      object-fit: contain;
+  cursor: pointer;
 }
 body .containerWrapper .container section video {
+  width: 80dvw;
+  height: 80dvh;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+body .containerWrapper .container section .imgClass {
+  width: 80dvw;
+  height: 80dvh;
+  cursor: pointer;
+  content: "";
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .containerWrapper .container section .imgClass img {
   width: 80dvw;
   height: 80dvh;
   -o-object-fit: contain;
@@ -162,7 +179,10 @@ body .containerWrapper .container section h1 {
     gap: 10px;
   }
   body nav .navBox ul li a {
-    font-size: 12px;
+    font-size: 10px;
     letter-spacing: 0.1rem;
   }
+}
+::-webkit-scrollbar {
+  display: none;
 }/*# sourceMappingURL=works3.css.map */

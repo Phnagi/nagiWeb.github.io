@@ -11,51 +11,61 @@ let imageData ={
 
             "photo":[
                 {
+                    type:"image",
                     title:"photo1",
                     url:"./image/1.jpg",
                     web:"./image/1.jpg",
                 },
                 {
+                    type:"image",
                     title:"photo2",
                     url:"./image/2.jpg",
                     web:"./image/2.jpg",
                 },
                 {
+                    type:"image",
                     title:"photo3",
                     url:"./image/3.jpg",
                     web:"./image/3.jpg",
                 },
                 {
+                    type:"image",
                     title:"photo4",
                     url:"./image/4.jpg",
                     web:"./image/4.jpg",
                 },
                 {
+                    type:"image",
                     title:"photo5",
                     url:"./image/5.jpg",
                     web:"./image/5.jpg",
                 },
                 {
+                    type:"image",
                     title:"photo6",
                     url:"./image/6.jpg",
                     web:"./image/6.jpg",
                 },
                 {
+                    type:"image",
                     title:"photo7",
                     url:"./image/7.jpg",
                     web:"./image/7.jpg",
                 },
                 {
+                    type:"image",
                     title:"photo8",
                     url:"./image/8.jpg",
                     web:"./image/8.jpg",
                 },
                 {
+                    type:"image",
                     title:"photo9",
                     url:"./image/9.jpg",
                     web:"./image/9.jpg",
                 },
                 {
+                    type:"image",
                     title:"photo10",
                     url:"./image/10.jpg",
                     web:"./image/10.jpg",
@@ -65,51 +75,61 @@ let imageData ={
             "works":[
 
                 {
+                    type:"image",
                     title:"works1",
                     url:"./image/works1.jpg",
                     web:"./image/works1.jpg",
                 },
                 {
+                    type:"image",
                     title:"works2",
                     url:"./image/works2.jpg",
                     web:"./image/works2.jpg",
                 },
                 {
+                    type:"image",
                     title:"works3",
                     url:"./image/works3.jpg",
                     web:"./image/works3.jpg",
                 },
                 {
+                    type:"image",
                     title:"works4",
                     url:"./image/works4.jpg",
                     web:"./image/works4.jpg",
                 },
                 {
+                    type:"image",
                     title:"works5",
                     url:"./image/works5.jpg",
                     web:"./image/works5.jpg",
                 },
                 {
+                    type:"image",
                     title:"works6",
                     url:"./image/works6.jpg",
                     web:"./image/works6.jpg",
                 },
                 {
+                    type:"image",
                     title:"works7",
                     url:"./image/works7.jpg",
                     web:"./image/works7.jpg",
                 },
                 {
+                    type:"image",
                     title:"works8",
                     url:"./image/works8.jpg",
                     web:"./image/works8.jpg",
                 },
                 {
+                    type:"image",
                     title:"works9",
                     url:"./image/works9.jpg",
                     web:"./image/works9.jpg",
                 },
                 {
+                    type:"image",
                     title:"works10",
                     url:"./image/works10.jpg",
                     web:"./image/works10.jpg",
@@ -179,20 +199,38 @@ let imageData ={
             ]
 
 }
+
+
+let imgHref="";
+let innerImg = document.querySelectorAll(".innerImg");
+
 function begin() {
     html = '';
     container = document.querySelector(".container");
     imageData.photo.forEach((e) => {
         // console.log(e);
         html += `<section>
-                    <img src="${e.url}" alt="">
+                    <img class="innerImg" src="${e.url}" alt="" data-href="${e.web} " >
                 </section>`
+
+    
     });
     // html = "<p>hello</p>";
     console.log(html);
 
 
     container.innerHTML=html;
+    innerImg = document.querySelectorAll(".innerImg");
+    innerImg.forEach((e) => {
+        
+
+        e.addEventListener("click",()=>{
+            imgHref=e.getAttribute("data-href")
+            console.log(imgHref);
+            window.open(`${imgHref}`);
+        });
+    });
+    
 }
 begin();
 
@@ -213,9 +251,10 @@ refleshAnimation();
 
 // let container2 = document.querySelector(".container");
 
-
+let sectionNum = 1 ;
 
 photoBtn.addEventListener("click",(e)=>{
+    sectionNum = 1 ;
     containerWrapper = document.getElementsByClassName(".containerWrapper");
     container = document.querySelector(".container");
     // html = '';
@@ -231,18 +270,30 @@ photoBtn.addEventListener("click",(e)=>{
     // container.innerHTML=html;
     sections.forEach((e) => {
        
-        console.log(sections.indexOf(e));
-        let index= sections.indexOf(e)+1;
-        e.innerHTML=`\n <img src=\"./image/${index}.jpg\" alt=\"\">\n `
+        // console.log(sections.indexOf(e));
+        // let index= sections.indexOf(e)+1;
+        // e.innerHTML=`\n <img src=\"./image/${index}.jpg\" alt=\"\">\n `
+        let index= sections.indexOf(e);
+        let photoUrl3 = imageData.photo[index].url;
+        let photoWeb1 =imageData.photo[index].web;
+        let sectionType = imageData.photo[index].type;
+        // console.log(photo);
+        if(sectionType == "video"){
+            e.innerHTML=`\n <video src=\"${photoUrl3}\" autoplay loop mute ></video>\n  `
+        }else if(sectionType == "image"){
+            e.innerHTML=`\n <a class="imgClass" href="#"><img class="innerImg" src=\"${photoUrl3}\" alt=\"\" data-href="${photoWeb1}" ></a>\n `
+
+        }
+
     });
 
     
-
+    link2();
     refleshAnimation();
 
 });
 worksBtn.addEventListener("click",(e)=>{
-  
+    sectionNum = 2 ;
     containerWrapper = document.getElementsByClassName(".containerWrapper");
     container = document.querySelector(".container");
     // html = '';
@@ -258,22 +309,34 @@ worksBtn.addEventListener("click",(e)=>{
    
     sections.forEach((e) => {
        
-        // console.log(sections.indexOf(e));
-        let index= sections.indexOf(e);
-        let photoUrl = imageData.works[index].url;
-        // console.log(photo);
+       
+        // let index= sections.indexOf(e);
+        // let photoUrl = imageData.works[index].url;
+       
         
-        e.innerHTML=`\n <img src=\"${photoUrl}\" alt=\"\">\n `
+        // e.innerHTML=`\n <img src=\"${photoUrl}\" alt=\"\">\n `
+        let index= sections.indexOf(e);
+        let photoUrl2 = imageData.works[index].url;
+        let photoWeb2 =imageData.works[index].web;
+        let sectionType = imageData.works[index].type;
+        // console.log(photo);
+        if(sectionType == "video"){
+            e.innerHTML=`\n <video src=\"${photoUrl2}\" autoplay loop mute ></video>\n  `
+        }else if(sectionType == "image"){
+            e.innerHTML=`\n <a class="imgClass" href="#"><img class="innerImg" src=\"${photoUrl2}\" alt=\"\" data-href="${photoWeb2}" ></a>\n `
+
+        }
     });
 
     
-
+    link2();
+ 
     refleshAnimation();
 
 });
 
 otherBtn.addEventListener("click",(e)=>{
-  
+    sectionNum = 3 ;
     containerWrapper = document.getElementsByClassName(".containerWrapper");
     container = document.querySelector(".container");
     // html = '';
@@ -292,22 +355,44 @@ otherBtn.addEventListener("click",(e)=>{
         // console.log(sections.indexOf(e));
         let index= sections.indexOf(e);
         let photoUrl = imageData.others[index].url;
+        let photoWeb3 =imageData.others[index].web;
         let sectionType = imageData.others[index].type;
         // console.log(photo);
         if(sectionType == "video"){
             e.innerHTML=`\n <video src=\"${photoUrl}\" autoplay loop mute ></video>\n  `
         }else if(sectionType == "image"){
-            e.innerHTML=`\n <img src=\"${photoUrl}\" alt=\"\">\n `
+            e.innerHTML=`\n <a class="imgClass" href="#"><img class="innerImg" src=\"${photoUrl}\" alt=\"\" data-href="${photoWeb3}" ></a>\n `
+
         }
         
         // <video src="clip.mp4" controls></video>
+        //href="index.html"
     });
 
     
 
+    link2();
     refleshAnimation();
 
 });
+// console.log(sections)
+
+
+
+function link2(){
+    innerImg = document.querySelectorAll(".innerImg");
+    innerImg.forEach((e) => {
+        
+
+        e.addEventListener("click",()=>{
+            imgHref=e.getAttribute("data-href")
+            console.log(imgHref);
+            window.open(`${imgHref}`);
+        });
+    });
+    
+
+}
 
 
 
