@@ -43,7 +43,7 @@ main{
                 align-items: center;
                 margin: 0;
                 padding: 0;
-                
+                bottom: 0dvh;
                 ul{
                     margin: 0;
                     padding: 0;
@@ -54,7 +54,7 @@ main{
                             color: $navColor;
                             text-decoration: none;
                             font-weight: 100;
-                            font-size:16px;
+                            font-size:20px;
                             letter-spacing: 0.2rem;
                             
                             transition:  0.5s ease-in-out;
@@ -121,7 +121,7 @@ main{
                         position: absolute;
                         overflow: hidden;
                         width: auto;
-                        height: auto;
+                        // height: auto;
                         z-index: 10;
 
                         margin: 0;
@@ -238,7 +238,7 @@ main{
 
             p{
                 position: relative;
-                font-size: 20rem;
+                font-size: 15rem;
                 margin: 0;
                 padding-left:3rem;
                 color: #ffffff;
@@ -256,12 +256,116 @@ main{
         .container1{
 
             nav{
+                
                 .navBox{
-                    bottom:0dvh;
+                    top: 97dvh;
+                    // bottom:-2dvh;
+                    ul{
+                        li{
+                            a{
+                                font-size:23px;
+                                letter-spacing: 0.1rem;
+                            }
+                        }
+                    }
                 }
             }
             .imagesBox{
+                .imagesBoxWrapper{
+                   
+                    .imagesBoxGallery{
+                       
+                        .imagesBoxGalleryFrame{
+                           
+    
+                            &:nth-of-type(1){
+                                
+                               
+                                top: 5%;
+                                left: 65%;
+                                
+                                // width: auto;
+                                // height: auto;
+                                .imagesBoxGalleryFrameFigure{
 
+                                    width: auto;
+                                    height: auto;
+
+                                    .imagesBoxGalleryFrameFigureImg{
+                                        width: 100%;
+                                        height:25vh;
+                                        
+                                    }
+                                }
+    
+                            }
+                            &:nth-of-type(2){
+                                top: 74%;
+                                left: 5%;
+                                .imagesBoxGalleryFrameFigure{
+                                 
+                                    width: auto;
+                                    height: auto;
+                        
+                                    .imagesBoxGalleryFrameFigureImg{
+                                        width: 100%;
+                                        height: 20vh;
+                                        
+                                    }
+                                }
+    
+                            }
+                            &:nth-of-type(3){
+                                top: 70%;
+                                right: 5%;
+                                .imagesBoxGalleryFrameFigure{
+                                 
+                                    width: auto;
+                                    height: auto;
+                            
+                                    .imagesBoxGalleryFrameFigureImg{
+                                        width: 100%;
+                                        height: 15vh;
+                                        
+                                    }
+                                }
+    
+                            }
+                            &:nth-of-type(4){
+                                top: 7%;
+                                left: 5%;
+                                .imagesBoxGalleryFrameFigure{
+                            
+                                    width: auto;
+                                    height: auto;
+                    
+                                    .imagesBoxGalleryFrameFigureImg{
+                                        width: 100%;
+                                        height: 20vh;
+                                        
+                                    }
+                                }
+    
+                            }
+                            &:nth-of-type(5){
+                                top: 32%;
+                                right: 12%;
+                                .imagesBoxGalleryFrameFigure{
+                               
+                                    width:  100%;
+                                    height:  100%;
+                     
+                                    .imagesBoxGalleryFrameFigureImg{
+                                        width: 100%;
+                                        height: 35vh;
+                                        
+                                    }
+                                }
+    
+                            }
+                        }
+                    }
+                }
             }
             .imagesTittle{
                 bottom: 2dvh;
@@ -281,11 +385,11 @@ main{
 
             nav{
                 .navBox{
-                    bottom:0dvh;
+                    bottom:-2dvh;
                     ul{
                         li{
                             a{
-                                font-size:14px;
+                                font-size:20px;
                                 letter-spacing: 0.1rem;
                             }
                         }
@@ -293,7 +397,101 @@ main{
                 }
             }
             .imagesBox{
+                .imagesBoxWrapper{
+                   
+                    .imagesBoxGallery{
+                       
+                        .imagesBoxGalleryFrame{
+                           
+    
+                            &:nth-of-type(1){
+                                
+                               
+                                top: 5%;
+                                left: 60%;
+                                
+                                // width: auto;
+                                // height: auto;
+                                .imagesBoxGalleryFrameFigure{
 
+                                    width: auto;
+                                    height: auto;
+
+                                    .imagesBoxGalleryFrameFigureImg{
+                                        width: 100%;
+                                        height:25vh;
+                                        
+                                    }
+                                }
+    
+                            }
+                            &:nth-of-type(2){
+                                top: 75%;
+                                left: 5%;
+                                .imagesBoxGalleryFrameFigure{
+                                 
+                                    width: auto;
+                                    height: auto;
+                        
+                                    .imagesBoxGalleryFrameFigureImg{
+                                        width: 100%;
+                                        height: 20vh;
+                                        
+                                    }
+                                }
+    
+                            }
+                            &:nth-of-type(3){
+                                top: 70%;
+                                right: 10%;
+                                .imagesBoxGalleryFrameFigure{
+                                 
+                                    width: auto;
+                                    height: auto;
+                            
+                                    .imagesBoxGalleryFrameFigureImg{
+                                        width: 100%;
+                                        height: 15vh;
+                                        
+                                    }
+                                }
+    
+                            }
+                            &:nth-of-type(4){
+                                top: 5%;
+                                left: 5%;
+                                .imagesBoxGalleryFrameFigure{
+                            
+                                    width: auto;
+                                    height: auto;
+                    
+                                    .imagesBoxGalleryFrameFigureImg{
+                                        width: 100%;
+                                        height: 20vh;
+                                        
+                                    }
+                                }
+    
+                            }
+                            &:nth-of-type(5){
+                                top: 32%;
+                                right: 12%;
+                                .imagesBoxGalleryFrameFigure{
+                               
+                                    width:  100%;
+                                    height:  100%;
+                     
+                                    .imagesBoxGalleryFrameFigureImg{
+                                        width: 100%;
+                                        height: 30vh;
+                                        
+                                    }
+                                }
+    
+                            }
+                        }
+                    }
+                }
             }
             .imagesTittle{
                 bottom: 2dvh;
@@ -326,7 +524,101 @@ main{
                 }
             }
             .imagesBox{
+                .imagesBoxWrapper{
+                   
+                    .imagesBoxGallery{
+                       
+                        .imagesBoxGalleryFrame{
+                           
+    
+                            &:nth-of-type(1){
+                                
+                               
+                                top: 10%;
+                                left: 60%;
+                                
+                                // width: auto;
+                                // height: auto;
+                                .imagesBoxGalleryFrameFigure{
 
+                                    width: auto;
+                                    height: auto;
+
+                                    .imagesBoxGalleryFrameFigureImg{
+                                        width: 100%;
+                                        height:20vh;
+                                        
+                                    }
+                                }
+    
+                            }
+                            &:nth-of-type(2){
+                                top: 75%;
+                                left: 20%;
+                                .imagesBoxGalleryFrameFigure{
+                                 
+                                    width: auto;
+                                    height: auto;
+                        
+                                    .imagesBoxGalleryFrameFigureImg{
+                                        width: 100%;
+                                        height: 15vh;
+                                        
+                                    }
+                                }
+    
+                            }
+                            &:nth-of-type(3){
+                                top: 60%;
+                                right: 10%;
+                                .imagesBoxGalleryFrameFigure{
+                                 
+                                    width: auto;
+                                    height: auto;
+                            
+                                    .imagesBoxGalleryFrameFigureImg{
+                                        width: 100%;
+                                        height: 10vh;
+                                        
+                                    }
+                                }
+    
+                            }
+                            &:nth-of-type(4){
+                                top: 5%;
+                                left: 5%;
+                                .imagesBoxGalleryFrameFigure{
+                            
+                                    width: auto;
+                                    height: auto;
+                    
+                                    .imagesBoxGalleryFrameFigureImg{
+                                        width: 100%;
+                                        height: 15vh;
+                                        
+                                    }
+                                }
+    
+                            }
+                            &:nth-of-type(5){
+                                top: 32%;
+                                right: 12%;
+                                .imagesBoxGalleryFrameFigure{
+                               
+                                    width:  100%;
+                                    height:  100%;
+                     
+                                    .imagesBoxGalleryFrameFigureImg{
+                                        width: 100%;
+                                        height: 25vh;
+                                        
+                                    }
+                                }
+    
+                            }
+                        }
+                    }
+                }
             }
             .imagesTittle{
                 // width: 100%;

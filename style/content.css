@@ -25,6 +25,7 @@ main .container1 {
 main .container1 .titleRow {
   height: 20dvh;
   position: relative;
+  display: flex;
   justify-content: center;
   align-items: center;
   padding: 0;
@@ -43,6 +44,8 @@ main .container1 .titleRow .titleCol h1 {
   font-weight: 500;
   font-size: 13rem;
   letter-spacing: 1.5rem;
+  text-align: center;
+  padding-left: 1.5rem;
 }
 main .container1 .formRow {
   height: 60dvh;
@@ -173,6 +176,7 @@ footer .navBox .socialNav {
 @media screen and (min-width: 576px) and (max-width: 768px) {
   main .container1 .titleRow .titleCol h1 {
     font-size: 8rem;
+    text-align: center;
   }
   footer .logo {
     font-size: 40px;
@@ -188,11 +192,14 @@ footer .navBox .socialNav {
   footer .navBox ul li a {
     font-size: 12px;
     letter-spacing: 0.1rem;
+    padding-left: 1.5rem;
   }
 }
 @media screen and (max-width: 576px) {
   main .container1 .titleRow .titleCol h1 {
-    font-size: 5rem;
+    font-size: 4rem;
+    text-align: center;
+    padding-left: 1.5rem;
   }
   footer .logo {
     font-size: 40px;
@@ -206,7 +213,7 @@ footer .navBox .socialNav {
     gap: 10px;
   }
   footer .navBox ul li a {
-    font-size: 12px;
+    font-size: 10px;
     letter-spacing: 0.1rem;
   }
 }

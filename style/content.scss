@@ -31,10 +31,11 @@ main{
             height: 20dvh;
             position: relative;
             // top: -5dvh;
+            display: flex;
             justify-content: center;
             align-items: center;
             padding: 0;
-       
+           
             .titleCol{
                
                 padding: 0;
@@ -49,6 +50,8 @@ main{
                   font-weight:500;
                   font-size: 13rem;
                   letter-spacing: 1.5rem;
+                  text-align: center;
+                  padding-left:1.5rem ;
                 }
             }
         }
@@ -216,6 +219,8 @@ footer{
                 .titleCol{
                     h1{
                         font-size: 8rem;
+                   
+                        text-align: center;
                     }
                 }
             }
@@ -237,6 +242,7 @@ footer{
                     a{
                         font-size:12px;
                         letter-spacing: 0.1rem;
+                        padding-left:1.5rem ;
                     }
                 }
             }
@@ -253,7 +259,9 @@ footer{
             .titleRow{
                 .titleCol{
                     h1{
-                        font-size: 5rem;
+                        font-size: 4rem;
+                        text-align: center;
+                        padding-left:1.5rem ;
                     }
                 }
             }
@@ -273,7 +281,7 @@ footer{
                 gap: 10px;
                 li{
                     a{
-                        font-size:12px;
+                        font-size:10px;
                         letter-spacing: 0.1rem;
                     }
                 }

@@ -57,16 +57,23 @@ body {
   font-size: 100px;
   letter-spacing: 1.5rem;
   margin: 0;
+  display: flex;
+  justify-content: center;
 }
 .beginBox .beginBoxWrapper .beginBoxRow .beginBoxRowText .beginBoxRowLine {
   content: "";
-  width: 500px;
-  border-bottom: 4px solid #ffffff;
+  width: 50px;
+  border-bottom: 3px solid #ffffff;
+  display: flex;
+  justify-content: center;
 }
 .beginBox .beginBoxWrapper .beginBoxRow .beginBoxRowText h4 {
   font-size: 12px;
   letter-spacing: 0.2rem;
   margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 .beginBox .beginBoxWrapper .beginBoxRow2 {
   position: absolute;
@@ -101,10 +108,14 @@ body {
 }
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
+  .beginBox .beginBoxWrapper .beginBoxRow .beginBoxRowText .beginBoxRowLine {
+    width: 70%;
+  }
   .beginBox .beginBoxWrapper .beginBoxRow .beginBoxRowText h4 {
     width: 70dvw;
     padding: 0;
     line-height: 1rem;
+    text-align: center;
   }
   .beginBox .beginBoxWrapper .beginBoxRow2 .beginBoxRowText2 ul {
     padding: 0;
@@ -113,10 +124,19 @@ body {
   }
 }
 @media screen and (max-width: 575px) {
+  .beginBox .beginBoxWrapper .beginBoxRow .beginBoxRowText h1 {
+    font-size: 50px;
+  }
+  .beginBox .beginBoxWrapper .beginBoxRow .beginBoxRowText .beginBoxRowLine {
+    width: 70%;
+    border-bottom: 3px solid #ffffff;
+  }
   .beginBox .beginBoxWrapper .beginBoxRow .beginBoxRowText h4 {
     width: 70dvw;
     padding: 0;
     line-height: 1rem;
+    font-size: 10px;
+    text-align: center;
   }
   .beginBox .beginBoxWrapper .beginBoxRow2 .beginBoxRowText2 ul {
     padding: 0;

@@ -55,17 +55,25 @@ body{
                     font-size: 100px;
                     letter-spacing: 1.5rem;
                     margin: 0;
+                    display: flex;
+                    justify-content: center;
+
                   
                 }
                 .beginBoxRowLine{
                     content: "";
-                    width: 500px;
-                    border-bottom: 4px solid $textColor;
+                    width: 50px;
+                    border-bottom: 3px solid $textColor;
+                    display: flex;
+                    justify-content: center;
                 }
                 h4{
                     font-size: 12px;
                     letter-spacing: 0.2rem;
                     margin-top: 1rem;
+                    display: flex;
+                    justify-content: center;
+                    text-align: center;
                 }
             }
         }
@@ -121,12 +129,13 @@ body{
                         
                     }
                     .beginBoxRowLine{
-
+                        width: 70%;
                     }
                     h4{
                         width:70dvw;
                         padding: 0;
                         line-height: 1rem;
+                        text-align: center;
                     }
                 }
             }
@@ -155,15 +164,18 @@ body{
             .beginBoxRow{
                 .beginBoxRowText{
                     h1{
-                        
+                        font-size: 50px;
                     }
                     .beginBoxRowLine{
-
+                        width: 70%;
+                        border-bottom:3px solid $textColor;
                     }
                     h4{
                         width:70dvw;
                         padding: 0;
                         line-height: 1rem;
+                        font-size: 10px;
+                        text-align: center;
                     }
                 }
             }
