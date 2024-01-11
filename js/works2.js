@@ -11,64 +11,64 @@ let imageData ={
 
             "photo":[
                 {
-                    type:"image",
+                    type:"video",
                     title:"photo1",
-                    url:"./image/1.jpg",
-                    web:"./image/1.jpg",
+                    url:"./image/1.mp4",
+                    web:"https://www.figma.com/file/HGcpRdJsOY9vVfDpolfQaB/Go-ahead(V3.0)-(public)?type=design&node-id=12%3A157813&mode=design&t=cD91xVhDWKSFKNKA-1",
                 },
                 {
-                    type:"image",
+                    type:"video",
                     title:"photo2",
-                    url:"./image/2.jpg",
-                    web:"./image/2.jpg",
+                    url:"./image/2.mp4",
+                    web:"./image/2.mp4",
                 },
                 {
-                    type:"image",
+                    type:"video",
                     title:"photo3",
-                    url:"./image/3.jpg",
-                    web:"./image/3.jpg",
+                    url:"./image/3.mp4",
+                    web:"./image/3.mp4",
                 },
                 {
-                    type:"image",
+                    type:"video",
                     title:"photo4",
-                    url:"./image/4.jpg",
-                    web:"./image/4.jpg",
+                    url:"./image/4.mp4",
+                    web:"./image/4.mp4",
                 },
                 {
-                    type:"image",
+                    type:"video",
                     title:"photo5",
-                    url:"./image/5.jpg",
-                    web:"./image/5.jpg",
+                    url:"./image/5.mp4",
+                    web:"./image/5.mp4",
                 },
                 {
-                    type:"image",
+                    type:"video",
                     title:"photo6",
-                    url:"./image/6.jpg",
-                    web:"./image/6.jpg",
+                    url:"./image/6.mp4",
+                    web:"./image/6.mp4",
                 },
                 {
-                    type:"image",
+                    type:"video",
                     title:"photo7",
-                    url:"./image/7.jpg",
-                    web:"./image/7.jpg",
+                    url:"./image/7.mp4",
+                    web:"./image/7.mp4",
                 },
                 {
-                    type:"image",
+                    type:"video",
                     title:"photo8",
-                    url:"./image/8.jpg",
-                    web:"./image/8.jpg",
+                    url:"./image/8.mp4",
+                    web:"./image/8.mp4",
                 },
                 {
-                    type:"image",
+                    type:"video",
                     title:"photo9",
-                    url:"./image/9.jpg",
-                    web:"./image/9.jpg",
+                    url:"./image/9.mp4",
+                    web:"./image/9.mp4",
                 },
                 {
-                    type:"image",
+                    type:"video",
                     title:"photo10",
-                    url:"./image/10.jpg",
-                    web:"./image/10.jpg",
+                    url:"./image/10.mp4",
+                    web:"./image/10.mp4",
                 }
             ],
 
@@ -77,70 +77,70 @@ let imageData ={
                 {
                     type:"image",
                     title:"works1",
-                    url:"./image/works1.jpg",
-                    web:"./image/works1.jpg",
+                    url:"./image/VI1.jpg",
+                    web:"./image/VI1.jpg",
                 },
                 {
                     type:"image",
                     title:"works2",
-                    url:"./image/works2.jpg",
-                    web:"./image/works2.jpg",
+                    url:"./image/VI1-2.jpg",
+                    web:"./image/VI1-2.jpg",
                 },
                 {
                     type:"image",
                     title:"works3",
-                    url:"./image/works3.jpg",
-                    web:"./image/works3.jpg",
+                    url:"./image/VI1-3.jpg",
+                    web:"./image/VI1-3.jpg",
                 },
                 {
                     type:"image",
                     title:"works4",
-                    url:"./image/works4.jpg",
-                    web:"./image/works4.jpg",
+                    url:"./image/VI1-4.jpg",
+                    web:"./image/VI1-4.jpg",
                 },
                 {
                     type:"image",
                     title:"works5",
-                    url:"./image/works5.jpg",
-                    web:"./image/works5.jpg",
+                    url:"./image/VI1-6.jpg",
+                    web:"./image/VI1-6.jpg",
                 },
                 {
                     type:"image",
                     title:"works6",
-                    url:"./image/works6.jpg",
-                    web:"./image/works6.jpg",
+                    url:"./image/VI1-8.jpg",
+                    web:"./image/VI1-8.jpg",
                 },
                 {
                     type:"image",
                     title:"works7",
-                    url:"./image/works7.jpg",
-                    web:"./image/works7.jpg",
+                    url:"./image/VI2.jpg",
+                    web:"./image/VI2.jpg",
                 },
                 {
                     type:"image",
                     title:"works8",
-                    url:"./image/works8.jpg",
-                    web:"./image/works8.jpg",
+                    url:"./image/VI2-2.jpg",
+                    web:"./image/VI2-2.jpg",
                 },
                 {
                     type:"image",
                     title:"works9",
-                    url:"./image/works9.jpg",
-                    web:"./image/works9.jpg",
+                    url:"./image/VI2-4.jpg",
+                    web:"./image/VI2-4.jpg",
                 },
                 {
                     type:"image",
                     title:"works10",
-                    url:"./image/works10.jpg",
-                    web:"./image/works10.jpg",
+                    url:"./image/VI2-10.jpg",
+                    web:"./image/VI2-10.jpg",
                 }
             ],
             "others":[
                 {
-                    type:"image",
+                    type:"video",
                     title:"P3-1",
-                    url:"./image/P3-1.jpg",
-                    web:"./image/P3-1.jpg",
+                    url:"./image/1.mp4",
+                    web:"https://www.figma.com/file/HGcpRdJsOY9vVfDpolfQaB/Go-ahead(V3.0)-(public)?type=design&node-id=12%3A157813&mode=design&t=cD91xVhDWKSFKNKA-1",
                 },
                 {
                     type:"image",
@@ -210,10 +210,11 @@ function begin() {
     imageData.photo.forEach((e) => {
         // console.log(e);
         html += `<section>
-                    <img class="innerImg" src="${e.url}" alt="" data-href="${e.web} " >
+                    <a class="imgClass" href="${e.web}"><video src=\"${e.url}\" autoplay loop mute data-href="${e.web}" ></video></a>
+                    
                 </section>`
 
-    
+                // <img class="innerImg" src="${e.url}" alt="" data-href="${e.web} " >
     });
     // html = "<p>hello</p>";
     console.log(html);
@@ -275,13 +276,13 @@ photoBtn.addEventListener("click",(e)=>{
         // e.innerHTML=`\n <img src=\"./image/${index}.jpg\" alt=\"\">\n `
         let index= sections.indexOf(e);
         let photoUrl3 = imageData.photo[index].url;
-        let photoWeb1 =imageData.photo[index].web;
+        let photoWeb3 =imageData.photo[index].web;
         let sectionType = imageData.photo[index].type;
         // console.log(photo);
         if(sectionType == "video"){
-            e.innerHTML=`\n <video src=\"${photoUrl3}\" autoplay loop mute ></video>\n  `
+            e.innerHTML=`\n <a class="imgClass" href="${photoWeb3}"><video src=\"${photoUrl3}\" autoplay loop mute data-href="${photoWeb3}" ></video></a>\n  `
         }else if(sectionType == "image"){
-            e.innerHTML=`\n <a class="imgClass" href="#"><img class="innerImg" src=\"${photoUrl3}\" alt=\"\" data-href="${photoWeb1}" ></a>\n `
+            e.innerHTML=`\n <a class="imgClass" href="#"><img class="innerImg" src=\"${photoUrl3}\" alt=\"\" data-href="${photoWeb3}" ></a>\n `
 
         }
 
@@ -321,7 +322,7 @@ worksBtn.addEventListener("click",(e)=>{
         let sectionType = imageData.works[index].type;
         // console.log(photo);
         if(sectionType == "video"){
-            e.innerHTML=`\n <video src=\"${photoUrl2}\" autoplay loop mute ></video>\n  `
+            e.innerHTML=`\n <a class="imgClass" href="${photoWeb2}"><video src=\"${photoUrl2}\" autoplay loop mute data-href="${photoWeb2}" ></video></a>\n  `
         }else if(sectionType == "image"){
             e.innerHTML=`\n <a class="imgClass" href="#"><img class="innerImg" src=\"${photoUrl2}\" alt=\"\" data-href="${photoWeb2}" ></a>\n `
 
@@ -359,7 +360,7 @@ otherBtn.addEventListener("click",(e)=>{
         let sectionType = imageData.others[index].type;
         // console.log(photo);
         if(sectionType == "video"){
-            e.innerHTML=`\n <video src=\"${photoUrl}\" autoplay loop mute ></video>\n  `
+            e.innerHTML=`\n <a class="imgClass" href="${photoWeb3}"><video src=\"${photoUrl}\" autoplay loop mute data-href="${photoWeb3}" ></video></a>\n  `
         }else if(sectionType == "image"){
             e.innerHTML=`\n <a class="imgClass" href="#"><img class="innerImg" src=\"${photoUrl}\" alt=\"\" data-href="${photoWeb3}" ></a>\n `
 

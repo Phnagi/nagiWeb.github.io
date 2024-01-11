@@ -1,0 +1,373 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2&family=GFS+Didot&family=Nanum+Myeongjo:wght@400;700;800&family=Noto+Sans+TC&family=Noto+Serif+TC&display=swap");
+.stickyContainer {
+  position: relative;
+  height: 100dvh;
+  width: 100%;
+}
+.stickyContainer .textBox {
+  position: sticky;
+  height: 420dvh;
+  width: 100%;
+}
+.stickyContainer .textBox .aboutH2 {
+  font-family: "Noto Serif TC", serif;
+  font-weight: 500;
+  letter-spacing: 10dvw;
+  width: 100%;
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 200px;
+  position: sticky;
+  top: 0px;
+  margin: 0;
+  padding: 0;
+  z-index: -1;
+  overflow: hidden;
+  transform: scale(clamp(0, var(--scale), 1));
+  padding-left: 5dvw;
+}
+.stickyContainer .textBox .scaleText {
+  position: sticky;
+  height: 150dvh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  top: 0px;
+  font-family: "Noto Sans TC", serif;
+  overflow: hidden;
+  z-index: 10;
+}
+.stickyContainer .textBox .scaleText .scaleTextContent {
+  position: absolute;
+  left: 0;
+  background-color: rgb(255, 255, 255);
+  height: 150dvh;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2dvw;
+  z-index: 10;
+}
+.stickyContainer .textBox .scaleText .scaleTextContent .scaleTextContentBox {
+  width: 15dvw;
+  position: absolute;
+  transform: translateX(-100vw);
+  transition: 0.8s ease-in-out;
+  opacity: 0;
+}
+.stickyContainer .textBox .scaleText .scaleTextContent .scaleTextContentBox p {
+  padding-bottom: 50dvh;
+  font-size: 0.9rem;
+  width: 100%;
+  line-height: 1.6rem;
+}
+.stickyContainer .textBox .scaleText .scaleTextImg {
+  position: absolute;
+  right: 0;
+  background-color: rgb(221, 215, 250);
+  height: 150dvh;
+  width: 80%;
+  display: flex;
+  z-index: 1;
+  overflow: hidden;
+  transform: translateX(100vw);
+  transition: 1s ease-in-out;
+  opacity: 0;
+}
+.stickyContainer .textBox .scaleText .scaleTextImg img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.stickyContainer .textBox .workContianer {
+  position: sticky;
+  width: 100%;
+  height: 160dvh;
+  background-color: #000000;
+  z-index: 10;
+}
+.stickyContainer .textBox .workContianer .worksH2 {
+  font-family: "Noto Serif TC", serif;
+  font-weight: 500;
+  width: 100%;
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 200px;
+  position: sticky;
+  top: 0px;
+  background-color: rgb(0, 0, 0);
+  margin: 0;
+  padding: 0;
+  z-index: 10;
+  overflow: hidden;
+  transform: scale(clamp(0, var(--scale) * 1.1, 1));
+  color: aliceblue;
+  letter-spacing: 10dvw;
+  padding-left: 5dvw;
+}
+.stickyContainer .scaleText2 {
+  position: sticky;
+  height: 150dvh;
+  width: 100%;
+  display: flex;
+  background-color: rgb(0, 0, 0);
+  margin: 0;
+  color: #ffffff;
+  font-family: "Noto Sans TC", serif;
+  z-index: 10;
+}
+.stickyContainer .scaleText2 .scaleTextContentBox {
+  height: 150dvh;
+  width: 20%;
+  background-color: #000000;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.stickyContainer .scaleText2 .scaleTextContentBox p {
+  position: absolute;
+  font-size: 0.9rem;
+  width: 15dvw;
+  height: 110dvh;
+  line-height: 1.6rem;
+  transform: translateX(-100vw);
+  transition: 1s ease-in-out;
+  opacity: 0;
+  padding: 2dvw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  margin: 0;
+  padding-bottom: 0;
+}
+.stickyContainer .scaleText2 .scale2TextImg {
+  position: absolute;
+  right: 0;
+  background-color: rgb(221, 215, 250);
+  width: 80%;
+  height: 150dvh;
+  display: flex;
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transform: translateX(100vw);
+  transition: 1s ease-in-out;
+  opacity: 0;
+}
+.stickyContainer .scaleText2 .scale2TextImg img {
+  height: 150dvh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.stickyContainer .scaleText2 .scale2TextImg video {
+  height: 150dvh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.worksTextAnimate {
+  transform: translateX(0vw) !important;
+  opacity: 1 !important;
+}
+
+.worksImgAnimate {
+  transform: translateX(0vw) !important;
+  opacity: 1 !important;
+}
+
+footer {
+  top: 450dvh;
+  font-family: "Nanum Myeongjo", serif;
+  width: 100%;
+  height: 30dvh;
+  position: relative;
+  z-index: 100;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  background-color: rgb(0, 0, 0);
+}
+footer .logo {
+  position: relative;
+  padding-left: 3dvw;
+  top: 10dvh;
+  font-size: 80px;
+  letter-spacing: 1.8rem;
+  color: #ffffff;
+}
+footer .navBox {
+  position: relative;
+  width: 100%;
+  display: flex;
+  top: 10dvh;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+footer .navBox ul {
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+footer .navBox ul li {
+  transform: translateY(0px);
+  transition: 0.5s ease-in-out;
+}
+footer .navBox ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 100;
+  font-size: 16px;
+  letter-spacing: 0.2rem;
+  transition: 0.5s ease-in-out;
+}
+footer .navBox ul li a:hover {
+  color: rgb(84, 84, 84);
+  transition: 0.5s ease-in-out;
+}
+footer .navBox ul li:hover {
+  transform: translateY(10px);
+  transition: 0.5s ease-in-out;
+}
+footer .navBox .mainNav {
+  width: 70dvw;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  list-style: none;
+  padding-left: 3dvw;
+}
+footer .navBox .socialNav {
+  width: 30dvw;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  list-style: none;
+  padding-right: 3dvw;
+}
+
+@media screen and (min-width: 576px) and (max-width: 900px) {
+  .stickyContainer .textBox .aboutH2 {
+    font-size: 150px;
+  }
+  .stickyContainer .textBox .scaleText .scaleTextContent {
+    width: 30%;
+  }
+  .stickyContainer .textBox .scaleText .scaleTextContent .scaleTextContentBox {
+    width: 20dvw;
+  }
+  .stickyContainer .textBox .scaleText .scaleTextContent .scaleTextContentBox p {
+    width: 100%;
+    font-size: 0.7rem;
+    line-height: 1.1rem;
+  }
+  .stickyContainer .textBox .scaleText .scaleTextImg {
+    width: 70%;
+  }
+  .stickyContainer .textBox .workContianer .worksH2 {
+    font-size: 150px;
+  }
+  .stickyContainer .scaleText2 .scaleTextContentBox {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+  }
+  .stickyContainer .scaleText2 .scaleTextContentBox p {
+    width: 25dvw;
+    font-size: 0.7rem;
+  }
+  .stickyContainer .scaleText2 .scale2TextImg {
+    width: 65%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .stickyContainer .textBox .aboutH2 {
+    font-size: 100px;
+  }
+  .stickyContainer .textBox .scaleText {
+    display: flex;
+    flex-direction: column;
+    top: -90dvh;
+  }
+  .stickyContainer .textBox .scaleText .scaleTextContent {
+    height: 50%;
+    width: 100%;
+    background-color: rgba(145, 71, 71, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .stickyContainer .textBox .scaleText .scaleTextContent .scaleTextContentBox {
+    width: 80dvw;
+  }
+  .stickyContainer .textBox .scaleText .scaleTextContent .scaleTextContentBox p {
+    width: 100%;
+    font-size: 0.7rem;
+    line-height: 1.1rem;
+  }
+  .stickyContainer .textBox .scaleText .scaleTextImg {
+    height: 50%;
+    width: 100%;
+    top: 80dvh;
+  }
+  .stickyContainer .textBox .workContianer .worksH2 {
+    font-size: 100px;
+  }
+  .stickyContainer .scaleText2 {
+    display: flex;
+    flex-direction: column;
+    height: 150dvh;
+  }
+  .stickyContainer .scaleText2 .scaleTextContentBox {
+    width: 100%;
+    height: 75dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .stickyContainer .scaleText2 .scaleTextContentBox p {
+    width: 50dvw;
+    font-size: 0.7rem;
+    transform: translateX(0vw);
+    transition: 1s ease-in-out;
+    opacity: 1;
+  }
+  .stickyContainer .scaleText2 .scale2TextImg {
+    width: 100%;
+    height: 75dvh;
+    bottom: 0;
+  }
+  .stickyContainer .scaleText2 .scale2TextImg img {
+    height: 75dvh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  footer {
+    top: 450dvh;
+  }
+  footer .logo {
+    font-size: 40px;
+    letter-spacing: 1rem;
+    top: 65%;
+  }
+  footer .navBox {
+    top: 65%;
+  }
+  footer .navBox ul {
+    gap: 10px;
+  }
+  footer .navBox ul li a {
+    font-size: 10px;
+    letter-spacing: 0.1rem;
+  }
+}/*# sourceMappingURL=indexContainer3.css.map */

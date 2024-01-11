@@ -30,6 +30,9 @@ observer2.observe(worksH2);
 
 // const scaleText2 = document.querySelector(".scaleText2");
 let worksText = document.querySelector(".worksText");
+let scaleTextContentBox = document.querySelector(".scaleTextContentBox");
+let scaleTextImg = document.querySelector(".scaleTextImg");
+let scale2TextImg = document.querySelector(".scale2TextImg");
 // const observer3 = new IntersectionObserver(([e]) => {
 //     isPinned3 = (e.intersectionRatio>0.99);
 //     // e.target.classList.toggle("worksTextAnimate",isPinned3);
@@ -96,10 +99,20 @@ document.addEventListener("scroll",(e) => {
     
     calcScroll=Y/allHeight;
     console.log(calcScroll);
-    if(calcScroll>=0.94){
+
+    if(calcScroll>=0.40){
+        scaleTextContentBox.classList.add("worksTextAnimate");
+        scaleTextImg.classList.add("worksImgAnimate");
+    }else{
+        scaleTextContentBox.classList.remove("worksTextAnimate");
+        scaleTextImg.classList.remove("worksImgAnimate");
+    }
+    if(calcScroll>=0.90){
         worksText.classList.add("worksTextAnimate");
+        scale2TextImg.classList.add("worksImgAnimate");
     }else{
         worksText.classList.remove("worksTextAnimate");
+        scale2TextImg.classList.remove("worksImgAnimate");
     }
 })
 

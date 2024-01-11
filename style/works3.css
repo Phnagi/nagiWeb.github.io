@@ -130,6 +130,7 @@ body .containerWrapper .container section video {
   height: 80dvh;
   -o-object-fit: contain;
      object-fit: contain;
+  cursor: pointer;
 }
 body .containerWrapper .container section .imgClass {
   width: 80dvw;
