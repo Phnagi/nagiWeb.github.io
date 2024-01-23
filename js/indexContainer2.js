@@ -100,14 +100,14 @@ document.addEventListener("scroll",(e) => {
     calcScroll=Y/allHeight;
     console.log(calcScroll);
 
-    if(calcScroll>=0.40){
+    if(calcScroll>=0.30){
         scaleTextContentBox.classList.add("worksTextAnimate");
         scaleTextImg.classList.add("worksImgAnimate");
     }else{
         scaleTextContentBox.classList.remove("worksTextAnimate");
         scaleTextImg.classList.remove("worksImgAnimate");
     }
-    if(calcScroll>=0.90){
+    if(calcScroll>=0.82){
         worksText.classList.add("worksTextAnimate");
         scale2TextImg.classList.add("worksImgAnimate");
     }else{

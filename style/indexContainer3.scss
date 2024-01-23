@@ -107,6 +107,9 @@ $WhiteColor:#ffffff;
                 img{
                     width: 100%;
                     object-fit: cover;
+                    // position: absolute;
+                    object-position: 0dvh -25dvh;
+                    // transform: translateY(100vw);
                 }
             }
 
@@ -367,7 +370,7 @@ footer{
                 .scaleTextImg{
                     width: 70%;
                     img{
-
+                        object-position:center -20dvh;
                     }
                 }
 
@@ -440,7 +443,7 @@ footer{
                     width: 100%;
                     top: 80dvh;
                     img{
-
+                        object-position:center -15dvh;
                     }
                 }
 
@@ -455,6 +458,7 @@ footer{
             display: flex;
             flex-direction: column;
             height: 150dvh;
+
             .scaleTextContentBox{
                 width: 100%;
                 height: 75dvh;
@@ -467,10 +471,10 @@ footer{
                     width:50dvw;
                     
                     font-size: 0.7rem;
-                    
+                    top: -10%;
 
                     // align-items: center;
-                    transform: translateX(0vw);
+                    transform: translateX(-100vw);
                     transition: 1s ease-in-out;
                     opacity: 1;
                 }

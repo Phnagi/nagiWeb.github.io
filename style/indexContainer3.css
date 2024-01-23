@@ -83,6 +83,8 @@
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: 0dvh -25dvh;
+     object-position: 0dvh -25dvh;
 }
 .stickyContainer .textBox .workContianer {
   position: sticky;
@@ -278,6 +280,10 @@ footer .navBox .socialNav {
   .stickyContainer .textBox .scaleText .scaleTextImg {
     width: 70%;
   }
+  .stickyContainer .textBox .scaleText .scaleTextImg img {
+    -o-object-position: center -20dvh;
+       object-position: center -20dvh;
+  }
   .stickyContainer .textBox .workContianer .worksH2 {
     font-size: 150px;
   }
@@ -326,6 +332,10 @@ footer .navBox .socialNav {
     width: 100%;
     top: 80dvh;
   }
+  .stickyContainer .textBox .scaleText .scaleTextImg img {
+    -o-object-position: center -15dvh;
+       object-position: center -15dvh;
+  }
   .stickyContainer .textBox .workContianer .worksH2 {
     font-size: 100px;
   }
@@ -344,7 +354,8 @@ footer .navBox .socialNav {
   .stickyContainer .scaleText2 .scaleTextContentBox p {
     width: 50dvw;
     font-size: 0.7rem;
-    transform: translateX(0vw);
+    top: -10%;
+    transform: translateX(-100vw);
     transition: 1s ease-in-out;
     opacity: 1;
   }
