@@ -5,7 +5,7 @@ let containerWrapper = document.getElementsByClassName(".containerWrapper");
 //
 let photoBtn = document.querySelector(".photoBtn");
 let worksBtn = document.querySelector(".worksBtn");
-let otherBtn = document.querySelector(".otherBtn");
+// let otherBtn = document.querySelector(".otherBtn");//////
 let html = '';
 let imageData ={
 
@@ -336,46 +336,46 @@ worksBtn.addEventListener("click",(e)=>{
 
 });
 
-otherBtn.addEventListener("click",(e)=>{
-    sectionNum = 3 ;
-    containerWrapper = document.getElementsByClassName(".containerWrapper");
-    container = document.querySelector(".container");
-    // html = '';
-    // container.innerHTML=html;
-    // imageData.photo2.forEach((e) => {
-    //     // console.log(e);
-    //     html += `<section>
-    //                 <img src="${e.url}" alt="">
-    //             </section>`
-    // });
-    // // html = "<p>hello</p>";
-    // console.log(html);
-    // console.log(sections);
-    sections.forEach((e) => {
+// otherBtn.addEventListener("click",(e)=>{
+//     sectionNum = 3 ;
+//     containerWrapper = document.getElementsByClassName(".containerWrapper");
+//     container = document.querySelector(".container");
+//     // html = '';
+//     // container.innerHTML=html;
+//     // imageData.photo2.forEach((e) => {
+//     //     // console.log(e);
+//     //     html += `<section>
+//     //                 <img src="${e.url}" alt="">
+//     //             </section>`
+//     // });
+//     // // html = "<p>hello</p>";
+//     // console.log(html);
+//     // console.log(sections);
+//     sections.forEach((e) => {
        
-        // console.log(sections.indexOf(e));
-        let index= sections.indexOf(e);
-        let photoUrl = imageData.others[index].url;
-        let photoWeb3 =imageData.others[index].web;
-        let sectionType = imageData.others[index].type;
-        // console.log(photo);
-        if(sectionType == "video"){
-            e.innerHTML=`\n <a class="imgClass" href="${photoWeb3}"><video src=\"${photoUrl}\" autoplay loop mute data-href="${photoWeb3}" ></video></a>\n  `
-        }else if(sectionType == "image"){
-            e.innerHTML=`\n <a class="imgClass" href="#"><img class="innerImg" src=\"${photoUrl}\" alt=\"\" data-href="${photoWeb3}" ></a>\n `
+//         // console.log(sections.indexOf(e));
+//         let index= sections.indexOf(e);
+//         let photoUrl = imageData.others[index].url;
+//         let photoWeb3 =imageData.others[index].web;
+//         let sectionType = imageData.others[index].type;
+//         // console.log(photo);
+//         if(sectionType == "video"){
+//             e.innerHTML=`\n <a class="imgClass" href="${photoWeb3}"><video src=\"${photoUrl}\" autoplay loop mute data-href="${photoWeb3}" ></video></a>\n  `
+//         }else if(sectionType == "image"){
+//             e.innerHTML=`\n <a class="imgClass" href="#"><img class="innerImg" src=\"${photoUrl}\" alt=\"\" data-href="${photoWeb3}" ></a>\n `
 
-        }
+//         }
         
-        // <video src="clip.mp4" controls></video>
-        //href="index.html"
-    });
+//         // <video src="clip.mp4" controls></video>
+//         //href="index.html"
+//     });
 
     
 
-    link2();
-    refleshAnimation();
+//     link2();
+//     refleshAnimation();
 
-});
+// });
 // console.log(sections)
 
 

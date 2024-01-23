@@ -152,7 +152,6 @@
 .stickyContainer .scaleText2 .scale2TextImg {
   position: absolute;
   right: 0;
-  background-color: rgb(221, 215, 250);
   width: 80%;
   height: 150dvh;
   display: flex;
@@ -173,6 +172,10 @@
   height: 150dvh;
   -o-object-fit: cover;
      object-fit: cover;
+  position: absolute;
+  right: 0;
+  transform-origin: right;
+  transform: scale(90%);
 }
 
 .worksTextAnimate {
@@ -283,8 +286,10 @@ footer .navBox .socialNav {
     justify-content: center;
   }
   .stickyContainer .scaleText2 .scaleTextContentBox p {
+    bottom: -10%;
     width: 25dvw;
     font-size: 0.7rem;
+    height: 100dvh;
   }
   .stickyContainer .scaleText2 .scale2TextImg {
     width: 65%;
@@ -351,6 +356,10 @@ footer .navBox .socialNav {
     height: 75dvh;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .stickyContainer .scaleText2 .scale2TextImg video {
+    transform: scale(40%);
+    bottom: -45%;
   }
   footer {
     top: 450dvh;
