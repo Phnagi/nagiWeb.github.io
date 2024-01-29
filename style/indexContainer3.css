@@ -83,8 +83,8 @@
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: 0dvh -25dvh;
-     object-position: 0dvh -25dvh;
+  -o-object-position: 0dvh -50dvh;
+     object-position: 0dvh -50dvh;
 }
 .stickyContainer .textBox .workContianer {
   position: sticky;
